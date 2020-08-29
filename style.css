@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  width: 100vw;
+}
+.container .nav {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 5rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+  z-index: 1000;
+  color: #666666;
+}
+.container .nav:hover {
+  transform: scale(1.25);
+}
+.container .frame {
+  height: 500px;
+  width: 900px;
+  overflow: hidden;
+  border: solid black 4px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 0px 5px;
+}
+.container .frame .images {
+  width: 3600;
+  display: flex;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.buttons button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  outline: none;
+  border: none;
+  background-color: #d8d8d8;
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 0px 5px;
+  transition: background-color 0.2s;
+}
+.buttons button:hover {
+  background-color: #666666;
+}
+.buttons .active-button {
+  background-color: #666666;
+}
+
+/*# sourceMappingURL=style.css.map */
